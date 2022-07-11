@@ -1,0 +1,706 @@
+/* GENERALES */
+
+@font-face {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    src: url('../tipography/Encode_Sans/EncodeSans-VariableFont_wdth\,wght.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #fff;
+  }
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.style-btn {
+    background-color: #4b3495;
+    color: rgb(246, 244, 255);
+}
+
+.style-btn:hover {
+    background-color: #060b50;
+    color: #fff;
+    
+}
+
+/* HEADER */
+  /* Navbar */
+
+#home .nav-scroll {
+    background: linear-gradient(#020532, #2837e0);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+
+#home .navbar-brand {
+    width: 30px;
+  }
+  
+#home .nav-bar-nav {
+    position: fixed;
+  }
+  
+#home .nav-item a {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* Sección Banner  */
+
+ #banner {
+    background: url('../img/background/background_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+#banner .presentation {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+#banner .welcome {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 15%;
+  }
+  
+#banner .banner-subtitle {
+    color: #6256e3;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  /* MAIN */
+
+ main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.section-description {
+    text-align: center;
+    color: #fff;
+}
+
+.section-title {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline #43434ed8;
+    text-decoration-thickness: 5px;
+  }
+
+/* Sección Sobre Mí */
+
+#about {
+    background-color: rgb(15, 14, 79);
+    width: 100%;
+    padding: 2%;
+}
+
+#about .section-title {
+    padding-top: 5%;
+}
+
+#about .about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+#about .about__container .about-image {
+    width: 315px;
+    height:200px;
+}
+
+#about .about__container .section-description h3 {
+    font-size: 20px;
+    color: rgb(180, 188, 254);
+    margin: 3%;
+}
+
+#about .about__container .section-description p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* Sección Proyectos */
+
+#projects {
+    background-color: rgb(32, 30, 132);
+    width: 100%;
+}
+
+#projects .section-title {
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+
+#projects .projects__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 5%;
+}
+
+#projects .project-image {
+    width: 315px;
+    border: 2px solid #000;
+    margin: 5px 0 15px 0;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+#projects .project-image:hover {
+    transform: scale(1.05);
+}
+
+/* Sección Conocimientos */
+
+#skills {
+    background-color: #3e49c3;
+    width: 100%;
+    height: 40vh;
+}
+
+#skills .section-title {
+    padding-top: 5%;
+    margin-bottom: 10%;
+}
+
+#skills .container__skills {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    background-color: #020532;
+    width: 98%;
+    margin: auto;
+}
+
+#skills .container__skills .skill {
+    width: 50px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+#skills .container__skills .skill:hover {
+    transform: scale(1.05);
+}
+
+/* Sección Contacto */
+
+#contact {
+    background-color: #a8a2ea;
+    width: 100%;
+}
+
+#contact .container__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact .section-title {
+    padding-top: 5%;
+    margin-bottom: 10%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    height: 10vh
+}
+
+footer span {
+    font-size: 10px;
+    color: #fff;
+}
+
+footer .container__social-networks {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .container__social-networks .social-network {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+  footer .container__social-networks .social-network img {
+    filter: grayscale(1);
+    transition: 0.1s;
+  }
+  
+  footer .container__social-networks .social-network img:hover {
+    filter: grayscale(0);
+  }
+
+  /* Responsive tablet */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* Seccion Banner */
+
+    #banner .presentation {
+        height: 80vh;
+        width: 100%;
+        margin: auto
+    }
+    
+    #banner .welcome {
+        font-size: 40px;
+    }
+
+    #banner .banner-subtitle {
+        font-size: 35px;
+    }
+
+    /* Sección Sobre mí */
+
+    #about .section-title {
+        padding: 1%;
+    }
+
+    #about .about__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 2%;
+    }
+
+    #about .about__container .about-image {
+        width: 400px;
+        height:300px;
+     }
+
+    #about .about__container .section-description {
+        width: 50%;
+        margin-left: 3%;
+    }
+
+    /* Sección Proyectos */
+
+    #projects .section-title {
+        padding-top: 3%;
+        margin-bottom: 2%;
+    }
+
+    #projects .projects__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 25px;
+        padding-bottom: 1%;
+     }
+
+    #projects .projects__container .project-image {
+        width: 350px;
+        height: 300px;
+        margin: 5px 5px;
+    }
+
+    /* Sección Conocimientos */
+
+    #skills {
+        background-color: #3e49c3;
+        width: 100%;
+        height: 50vh;
+    }
+    
+    #skills .section-title {
+        padding-top: 3%;
+        margin-bottom: 5%;
+    }
+    
+    #skills .container__skills {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 5px solid #fff;
+        border-radius: 10px;
+        background-color: #020532;
+        width: 98%;
+        margin: auto;
+    }
+    
+    #skills .container__skills .skill {
+        width: 70px;
+    }
+
+    /* Sección Contacto */
+
+    #contact .section-title {
+        padding-top: 2%;
+        margin-bottom: 4%;
+    }
+
+    #contact .container__contact {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* FOOTER */
+
+    footer {
+        height: 12vh;
+    }
+
+    footer span {
+        font-size: 12px;
+    }
+    
+    footer .container__social-networks {
+        width: 50%;
+        margin: auto;
+        margin-top: 5px;
+    }
+    
+    footer .container__social-networks .social-network {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+ /* Responsive Escritorio */
+
+@media (min-width: 1024px)  and (max-width: 1279px) {
+
+    /* NavBar */
+
+    #home .nav-item a {
+        font-size: 20px;
+    }
+
+    /* Sección Banner */
+    
+    #banner .presentation {
+        height: 70vh;
+    }
+
+    #banner .welcome {
+        font-size: 50px;
+    }
+
+    #banner .banner-subtitle {
+        font-size: 40px;
+    }
+    
+    /* Sección Sobre mí */
+
+    #about .section-title {
+        padding: 1%;
+    }
+
+    #about .about__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 2%;
+    }
+
+    #about .about__container .about-image {
+        width: 500px;
+        height:400px;
+     }
+
+    #about .about__container .section-description {
+        width: 50%;
+        margin-left: 3%;
+    }
+
+    #about .about__container .section-description h3 {
+        font-size: 35px;
+
+    }
+
+    #about .about__container .section-description p {
+        font: 30px;
+    }
+
+    /* Sección Proyectos */
+
+    #projects {
+        width: 100%;
+    }
+
+    #projects .section-title {
+        padding-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    #projects .projects__container {
+        width: 100% ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+     }
+
+    #projects .projects__container .project-image {
+        width: 255px;
+        height: 280px;
+        margin-right: 2px;
+    }
+
+    /* Sección Conocimientos */
+
+    #skills {
+        height: 60vh;
+    }
+    
+    #skills .section-title {
+        padding-top: 2%;
+        margin-bottom: 5%;
+    }
+    
+    #skills .container__skills {
+        height: 30vh;
+        margin: auto;
+    }
+    
+    #skills .container__skills .skill {
+        width: 70px;
+    }
+
+    /* Sección Contacto */
+
+    #contact .section-title {
+        padding-top: 2%;
+        margin-bottom: 3%;
+    }
+
+    #contact .container__contact {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* FOOTER */
+
+    footer span {
+        font-size: 10px;
+    }
+
+    footer .container__social-networks {
+        width: 30%;
+        margin: auto;
+        padding-top: 3px;
+    }
+
+    footer .container__social-networks .social-network {
+        width: 25px;
+    }
+}
+
+ /* Responsive Escritorio L */
+
+@media (min-width: 1280px) {
+
+        /* NavBar */
+       
+    #home .nav-item a {
+            font-size: 35px;
+        }    
+
+    #home .navbar-brand {
+            width: 40px;
+        }
+
+    #home .nav-item a {
+        font-size: 20px;
+        font-weight: bold;
+        }
+
+        /* Sección Banner */
+
+    #banner .welcome {
+        font-size: 60px;
+    }
+
+    #banner .banner-subtitle {
+        font-size: 50px;
+    }
+
+    #banner .presentation {
+        height:70vh;
+    }
+
+    /* Seccion Sobre Mí */
+
+    #about .section-title {
+        font-size: 40px;
+        padding-top: 1%;
+        margin-bottom: 2%;
+    }
+
+    #about .about__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 0;
+    }
+
+    #about .about__container .about-image {
+        width: 700px;
+        height: 500px;
+        margin-right: 1%;
+    }
+
+    #about .about__container .section-description {
+    width: 50%;
+    margin-left: 3%;
+    }
+
+    #about .about__container .section-description {
+        width: 70%;
+        margin-left: 3%;
+    }  
+
+    #about .about__container .about-image {
+        width: 700px;
+        height:500px;
+    }
+
+    #about .about__container .section-description h3 {
+        font-size: 40px;
+
+    }
+    #about .about__container .section-description p {
+        font-size: 30px;
+    }
+
+    /* Sección Proyectos */
+
+    #projects {
+        width: 100%;
+        padding: 2px 1px 0 0;
+        
+    }
+
+    #projects .section-title {
+        font-size: 40px;
+        padding: 2%;
+        margin-bottom: 1%;
+    }
+
+    #projects .projects__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 1%;
+        margin-bottom: 2%;
+    }
+
+    #projects .projects__container .project-image {
+        width: 320px;
+        height: 300px;      
+    }
+
+    #skills {
+        background-color: #3e49c3;
+        width: 100%;
+        height: 55vh;
+    }
+    
+    #skills .section-title {
+        padding-top: 2%;
+        margin-bottom: 3%;
+        font-size: 40px;
+    }
+    
+    #skills .container__skills {
+        height: 30vh;
+        width: 97%;
+    }
+    
+    #skills .container__skills .skill {
+        width: 100px;
+        padding-top: 2%;
+    }
+
+    /* Sección Contacto */
+
+    #contact .section-title {
+        font-size: 40px;
+        padding-top: 1%;
+        margin-bottom: 3%;
+    }
+
+    #contact .container__contact {
+        width: 30%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* FOOTER */
+
+    footer span {
+        font-size: 12px;
+
+    }
+
+    footer .container__social-networks {
+        width: 30%;
+        margin: auto;
+        padding-top: 7px;
+    }
+
+    footer .container__social-networks .social-network {
+        width: 25px;
+        height: 25px;
+    }   
+}
+

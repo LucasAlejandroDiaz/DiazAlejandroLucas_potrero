@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/estilos.css">
+    <title>Alejandro Díaz Portfolio</title>
+</head>
+<body>
+    
+      <!-- HEADER-->
+      <header id="home">
+          <!-- NavBar -->
+          <nav class="navbar navbar-expand-lg nav-scroll">
+            <div class="container-fluid">
+              <a class="navbar-brand">
+                <img src="./public/img/logo/logo.png"class="d-inline-block align-text-top">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./public/img/icons/icon_menuburger.png" alt="">
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre Mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Conocimientos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                  </li>  
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+    <!-- Sección Banner -->
+
+      <section id="banner">
+        <div class="presentation">
+         <h1 class="welcome">Bienvenidos a mi portfolio!</h1>
+         <h2 class="banner-subtitle">Alejandro Díaz</h2>
+         <h2 class="banner-subtitle">Desarrollador Front-End</h2>
+        </div>
+      </section>
+
+      <!-- MAIN -->
+      <main>
+
+        <!-- Sección Sobre Mí -->
+
+        <section id="about">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about__container">
+                <div class="about-image">
+                    <img src="./public/img/about/about.png" alt="about">
+                </div>
+                <div class="section-description">
+                    <h3>Me llamo Alejandro Díaz</h3>
+                    <p>Soy Desarrollador Front-End. Mi trabajo consiste en crear páginas web responsive. Tengo conocimientos de HTML, CSS, Javascript y uso frameworks como Bootstrap 5.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+
+        <section id="projects">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects__container pb-20">
+              <div class="project">
+                <div class="project-image">
+                  <img src="./public/img/projects/project-portfolio.jpg" alt="portfolio">
+                </div>
+                <div class="project-modal text-center">
+                  <button type="button" class="mt-2 mx-2 mb-3 btn btn-large style-btn" data-bs-toggle="modal" data-bs-target="#modal1">Portfolio</button>
+                    <div class="modal fade" id="modal1" tabindex="1" aria-hidden="true" aria-labelledby="modal-1"  data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-center">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="modal-1">Portfolio</h5>
+                              </div>
+                              <div class="modal-body">
+                                <p>Primer proyecto finalizado con elementos de bootstrap para el navbar, el formulario y los modals hecho en el curso FrontEnd de Potrero Digital. Tiene diseño responsive adaptado para celulares (desde los 320px), tablet(720px) y 2 tamaños de escritorio (1024px y 1280px)</p>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Cerrar</button>
+                                  <a class="btn btn-primary" href="https://www.google.com/" target="_blank" data-bs-target="modal" role="button">Ir a Github</a>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project-image">
+                  <img src="./public/img/projects/project-pizza.jpg" alt="">
+                </div>
+                <div class="project-modal text-center">
+                  <button type="button" class="mt-2 mx-2 mb-3 btn btn-large style-btn" data-bs-toggle="modal" data-bs-target="#modal2">Pizza-Web</button>
+                    <div class="modal fade" id="modal2" tabindex="1" aria-hidden="true" aria-labelledby="modal-2"  data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-center">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="modal-2">Pizza-Web</h5>
+                              </div>
+                              <div class="modal-body">
+                                <p>En desarrollo</p>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project-image">
+                  <img src="./public/img/projects/project-trains.jpg" alt="">
+                </div>
+                <div class="project-modal text-center">
+                  <button type="button" class="mt-2 mx-2 mb-3 btn  btn-large style-btn" data-bs-toggle="modal" data-bs-target="#modal3">Trenes</button>
+                    <div class="modal fade" id="modal3" tabindex="1" aria-hidden="true" aria-labelledby="modal-3" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-center">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="modal-3">Trenes</h5>
+                              </div>
+                              <div class="modal-body">
+                                <p>En desarrollo</p>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project-image">
+                  <img src="./public/img/projects/project-gym.jpg" alt="">
+                </div>
+                <div class="project-modal text-center">
+                  <button type="button" class="mt-2 mx-2 mb-3 btn  btn-large style-btn" data-bs-toggle="modal" data-bs-target="#modal4">CalisGym</button>
+                    <div class="modal fade" id="modal4" tabindex="1" aria-hidden="true" aria-labelledby="modal-2" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-center">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="modal-4">Calisgym</h5>
+                              </div>
+                              <div class="modal-body">
+                                <p>En desarrollo</p>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- Sección Conocimiento -->
+
+        <section id="skills">
+          <h2 class="section-title">Conocimientos</h2>
+          <div class="container__skills">
+            <div class="skill">
+              <img src="./public/img/icons/icon-html5.png" alt="html">
+            </div>
+            <div class="skill">
+              <img src="./public/img/icons/icon-css.png" alt="css">
+            </div>
+            <div class="skill">
+              <img src="./public/img/icons/icon-javascript.png" alt="js">
+            </div>
+            <div class="skill">
+              <img src="./public/img/icons/icon-bootstrap.png" alt="html">
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Contacto -->
+
+        <section id="contact">
+          <h2 class="section-title">Contacto</h2>
+          <form class="container form-space">
+            <div class="form-outline mb-3">
+              <input type="text" placeholder="Nombre y Apellido" class="form-control" />
+            </div>
+            <div class="form-outline mb-3">
+              <input type="email" placeholder="E-mail" class="form-control" />
+            </div>
+            <div class="form-outline mb-3">
+              <textarea class="form-control" placeholder="Mensaje" rows="4"></textarea>
+            </div>
+            <div class="text-center pb-4">
+              <button type="button" class="mt-2 mx-2 mb-3 btn btn-large style-btn">Enviar</button>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+
+      <footer>
+        <span>@todos los derechos reservados-2022</span>
+        <div class="container__social-networks">
+          <div class="social-network">
+            <a href="https://github.com/LucasAlejandroDiaz/DiazAlejandroLucas_potrero" target="_blank"><img src="./public/img/icons/icon-github.png" alt="gh"></a>
+          </div>
+          <div class="social-network">
+            <a href="https://www.facebook.com/Lucajandro/" target="_blank"><img src="./public/img/icons/icon-facebook.png" alt="fb"></a>
+          </div>
+          <div class="social-network">
+            <a href="https://www.linkedin.com/in/alejandro-lucas-d%C3%ADaz-95887a233/" target="_blank"><img src="./public/img/icons/icon-linkedin.png" alt="ln"></a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="./public/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+</body>
+</html>
