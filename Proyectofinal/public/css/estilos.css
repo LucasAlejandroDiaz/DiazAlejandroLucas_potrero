@@ -64,7 +64,7 @@ img {
   /* Sección Banner  */
 
  #banner {
-    background: url('../img/background/background_banner.jpg');
+    background: url('../img/banner/background_banner.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
