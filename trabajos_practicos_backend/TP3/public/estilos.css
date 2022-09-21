@@ -1,0 +1,64 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #9598f0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formulario */
+
+.box-login {
+    background-color: #0a0320;
+    width: 400px;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.box-login h1 {
+    color: #c3c300;
+    font-size: bold;
+    font-family: sans-serif;
+}
+
+.box-login input, 
+.box-login button {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #b2b803;
+    width: 200px;
+    outline: none;
+    color: #c3c300;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box-login input:focus {
+    width: 280px;
+    border-color: #212102;
+}
+
+.box-login button {
+    cursor:pointer;
+    width: 150px;
+}
+
+.box-login button:hover {
+background-color: #c3c300;
+color: #0a0320;
+border: 2px solid #212102;
+}
